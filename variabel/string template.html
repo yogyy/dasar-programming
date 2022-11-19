@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Template</title>
+    <style>
+        body{
+
+            color: white;
+            font-size: 50px;
+            text-shadow: 2px 2px black;
+            background-image: linear-gradient(to bottom right, grey, rgb(94, 94, 86));
+
+            
+        }
+        *{
+
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div id="artikel" class="article">
+
+        </div>
+    </section>
+
+<script>
+
+    const lastName = "Constantine";
+    const firstName = "John";
+    const nilai = 666
+
+    const namaLengkap = `Name : ${firstName} ${lastName}, Dukun : ${nilai > 500}`;
+    
+
+    console.log(namaLengkap);
+
+    document.writeln(namaLengkap)
+
+
+
+    const multiline = `multiline, 
+0consectetur adipisicing elit. 
+Deserunt placeat eius animi.                  a mimir.`
+
+    document.writeln("<pre>")
+    document.writeln(multiline)    
+    document.writeln("<pre>")
+    
+
+    document.writeln("konversi string dan number")
+
+    document.writeln(`<p>${parseInt("1.7")}</p>`)
+    document.writeln(`<p>${parseFloat("1.1")}</p>`)
+    document.writeln(`<p>${Number("1.7")}</p>`)
+
+    const a = 20
+    const b = 22
+    const total = `tahun ` + a.toString() + b.toString()
+    document.writeln(`<p>${total}</p>`)
+
+    document.writeln("OPerasi NaN")
+    
+    document.writeln(`<p>${parseInt("apaiyh")}</p>`)
+    document.writeln(`<p>${parseInt("616apaiyh")}</p>`)
+
+    document.getElementById("artikel").innerText = "testtesttest!"
+
+    const value1 = Number("salah")
+    const value2 = 100
+    const sum = value1 + value2
+
+    document.writeln(`<p>${sum}</p>`)
+    
+</script>
+</body>
+</html>
